@@ -1,0 +1,28 @@
+.box{
+    display: flex;
+    border: 2px solid;
+    height: 50px;
+    background-color: black;
+     color: white; 
+    font-size: 20px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.h3{
+    height: 30px;
+    padding: 2px;
+}
+h3{
+    margin-top: -1px;
+}
+.sec{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    margin-top: -1px;
+}
+
+.sec>button{
+    width: 80px;
+    height: 40px;
+}
