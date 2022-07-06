@@ -1,3 +1,14 @@
 .App {
+  display: flex;
   text-align: center;
+  height: 100vh;
+  border: 2px solid;
+}
+.light{
+  background-color: white;
+  color: black;
+}
+.dark{
+  color: white;
+  background-color: black;
 }

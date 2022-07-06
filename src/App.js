@@ -2,11 +2,14 @@ import { useContext } from 'react';
 import './App.css';
 import Navbar from './component/Navbar';
 import { AuthContext } from './context/AuthContext';
+import { ThemeContext } from './context/ThemeContex';
 
 function App() {
   const [state] = useContext(AuthContext)
+  const {isLight} = useContext(ThemeContext)
   return (
-    <div className="App">
+    <div className={`App ${isLight ? "light" : "dark"}`}>
+      <div style={{width:"100%"}}>
       <Navbar/>
       {!state.isAuth && <h1>Please Login and enjoy</h1>}
       {state.isAuth && <div>
@@ -17,6 +20,7 @@ function App() {
         </h2>
       </div>}
     </div>
+      </div>
   );
 }
 
